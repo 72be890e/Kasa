@@ -1,5 +1,5 @@
 .collapse-container {
-    width: 100%;
+    width: 80%;
     background-color: $color-secondary;
     border-radius: 10px;
 
@@ -21,7 +21,7 @@
             font-size: 18px;
             list-style-position: inside;
             list-style-type: none;
-        }  
+        }
     }
 
     &.active {
@@ -29,7 +29,11 @@
 
         .collapse-content {
             display: none;
-        }   
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-medium) {
+        width: 100%;
     }
 }
 
@@ -38,6 +42,6 @@
     transition: 400ms ease-in-out;
 }
 .rotated {
-	transform: rotate(180deg);
-	transition: 400ms ease-in-out;
+    transform: rotate(180deg);
+    transition: 400ms ease-in-out;
 }

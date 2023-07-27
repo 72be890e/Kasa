@@ -11,4 +11,14 @@
             color: #e3e3e3;
         }
     }
+
+    @media screen and (max-width: $breakpoint-small) {
+        width: 100%;
+        text-align: initial;
+
+        .rate-star {
+            padding-left: 0.3rem;
+            font-size: 16px;
+        }
+    }
 }

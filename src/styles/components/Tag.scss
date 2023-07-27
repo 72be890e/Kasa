@@ -3,4 +3,9 @@
     color: $color-secondary;
     padding: 5px 10px;
     border-radius: 10px;
+
+    @media screen and (max-width: $breakpoint-small) {
+        font-size: 14px;
+        border-radius: 5px;
+    }
 }

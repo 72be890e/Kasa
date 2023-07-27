@@ -122,6 +122,12 @@
   padding: 5px 10px;
   border-radius: 10px;
 }
+@media screen and (max-width: 480px) {
+  .tag-element {
+    font-size: 14px;
+    border-radius: 5px;
+  }
+}
 
 .header-container {
   width: 100%;
@@ -203,7 +209,7 @@
 }
 
 .collapse-container {
-  width: 100%;
+  width: 80%;
   background-color: #f7f7f7;
   border-radius: 10px;
 }
@@ -232,6 +238,11 @@
 }
 .collapse-container.active .collapse-content {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .collapse-container {
+    width: 100%;
+  }
 }
 
 .arrow {
@@ -288,6 +299,16 @@
 }
 .rate-container .rate-star.star-grey {
   color: #e3e3e3;
+}
+@media screen and (max-width: 480px) {
+  .rate-container {
+    width: 100%;
+    text-align: initial;
+  }
+  .rate-container .rate-star {
+    padding-left: 0.3rem;
+    font-size: 16px;
+  }
 }
 
 .home-container {
@@ -393,7 +414,7 @@
 @media screen and (max-width: 480px) {
   .info-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: flex-start;
