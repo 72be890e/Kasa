@@ -1,0 +1,24 @@
+.footer-container {
+    position: inherit;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    background-color: black;
+    color: white;
+
+    svg {
+        width: 8rem;
+        height: 35px;
+        fill: white;
+        margin-top: 2.5rem;
+    }
+
+    p {
+        position: inherit;
+        bottom: 0;
+    }
+}

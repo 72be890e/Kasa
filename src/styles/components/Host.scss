@@ -1,0 +1,29 @@
+.host-container {
+    @include flex(row,flex-end,center);
+    width: 100%;
+    grid-gap: 1em;
+
+
+    .host-name {
+        inline-size: 6rem;
+        text-align: right;
+        overflow-wrap: break-word;
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-primary;
+    }
+
+    .host-picture {
+        @include flex(row,flex-end,center);
+        width: 64px;
+	    height: 64px;
+	    border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}

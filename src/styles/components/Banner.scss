@@ -1,0 +1,27 @@
+.banner {
+    @include flex(row, center, center);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+
+    .banner-text {
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 142.6%;
+        position: relative;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        .banner-text {
+            font-size: 18px;
+        }
+    }
+}

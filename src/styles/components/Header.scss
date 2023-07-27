@@ -1,0 +1,53 @@
+.header-container {
+    width: 100%;
+    max-width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 10px;
+    font-size: 24px;
+    gap: 20px;
+    text-align: right;
+    text-decoration-line: underline;
+
+    nav {
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 5rem;
+    }
+
+    svg {
+        fill: $color-primary;
+        width: 100%;
+        min-width: 150px;
+    }
+
+    .nav-link {
+        color: $color-primary;
+        text-decoration: none;
+        display: inline-block;
+        text-align: right;
+        text-decoration-line: underline;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        @include flex(row);
+        font-size: 14px;
+        font-weight: 500;
+
+        svg {
+            width: 145px;
+            height: 47px;
+        }
+
+        nav {
+            @include flex(row);
+            flex-wrap: nowrap;
+            align-content: center;
+            gap: 2rem;
+        }
+    }
+}

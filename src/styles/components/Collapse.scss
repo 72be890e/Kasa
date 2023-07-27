@@ -1,0 +1,43 @@
+.collapse-container {
+    width: 100%;
+    background-color: $color-secondary;
+    border-radius: 10px;
+
+    .description-container {
+        @include flex(row, space-between, center);
+        background-color: $color-primary;
+        height: 3rem;
+        font-size: 18px;
+        font-weight: 100;
+        color: $color-secondary;
+        padding: 0 15px;
+        border-radius: 10px;
+    }
+
+    .collapse-content-container {
+        .collapse-content {
+            color: $color-primary;
+            padding: 15px;
+            font-size: 18px;
+            list-style-position: inside;
+            list-style-type: none;
+        }  
+    }
+
+    &.active {
+        background-color: white;
+
+        .collapse-content {
+            display: none;
+        }   
+    }
+}
+
+.arrow {
+    transform: rotate(0deg);
+    transition: 400ms ease-in-out;
+}
+.rotated {
+	transform: rotate(180deg);
+	transition: 400ms ease-in-out;
+}

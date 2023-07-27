@@ -1,0 +1,65 @@
+.gallery {
+    width: 100%;
+    height: 500px;
+    margin: 0 0 32px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    border-radius: 25px;
+
+    .previous-img {
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        filter: drop-shadow(0 0 1px #000);
+        z-index: 2;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .next-img {
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        filter: drop-shadow(0 0 1px #000);
+        z-index: 2;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .images-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .gallery-image {
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .gallery-arrow {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        height: 35vh;
+        margin: 0;
+        .gallery-arrow {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

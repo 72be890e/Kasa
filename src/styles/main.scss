@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+@import "./components/Banner";
+@import "./components/Card";
+@import "./components/Gallery";
+@import "./components/Tag";
+@import "./components/Header";
+@import "./components/Footer";
+@import "./components/Collapse";
+@import "./components/Host";
+@import "./components/Rate";
+
+@import "./pages/Home";
+@import "./pages/NotFound";
+@import "./pages/Housing";
+@import "./pages/About";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: initial;
+}
+
+.structure-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 3rem;
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .page-container {
+        max-width: 90vw;
+    }
+}

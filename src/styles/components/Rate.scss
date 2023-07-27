@@ -1,0 +1,14 @@
+.rate-container {
+    margin: 1rem 0;
+    text-align: right;
+
+    .rate-star {
+        padding-left: 0.8rem;
+        font-size: 18px;
+        color: $color-primary;
+
+        &.star-grey {
+            color: #e3e3e3;
+        }
+    }
+}

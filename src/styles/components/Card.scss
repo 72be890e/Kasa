@@ -1,0 +1,31 @@
+.component-card {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    height: 340px;
+    width: 85%;
+    margin: auto;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    p {
+        width: 50%;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        align-self: end;
+        padding-left: 20px;
+    }
+
+    &:active,
+    &:hover,
+    &:visited,
+    &:link {
+        text-decoration: none;
+    }
+}

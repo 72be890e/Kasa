@@ -1,0 +1,61 @@
+.info-container {
+    @include flex(row, space-between);
+
+    .info-tags {
+        margin: 0 0 20px;
+
+        h1,
+        h2 {
+            color: $color-primary;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: calc(1rem + 1.4vw);
+            margin: 5px 0;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .info-tags-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .info-stars-host {
+        display: flex;
+        justify-content: space-between;
+        color: $color-primary;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        @include flex(column);
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        .info-tags {
+            h1 {
+                font-size: 1.95em;
+                margin: 5px 0;
+            }
+
+            h2 {
+                font-size: 1.55em;
+                margin: 10px 0;
+            }
+
+            .info-tags-content {
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+.housing-collapse-container {
+    @include flex(row, center, normal);
+    grid-gap: 1em;
+}

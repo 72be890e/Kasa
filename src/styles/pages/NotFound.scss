@@ -1,0 +1,30 @@
+.not-found-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    gap: 40px;
+    color: $color-primary;
+
+    .not-found-content {
+        @include flex(column, center, center);
+
+        .not-found-title {
+            font-weight: 700;
+            font-size: 15rem;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: clamp(20px, 4vw, 36px);
+            text-align: center;
+        }
+    }
+
+    .return-link {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1em;
+        text-decoration: none;
+    }
+}
