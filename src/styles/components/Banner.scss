@@ -13,15 +13,14 @@
         color: white;
         font-style: normal;
         font-weight: 500;
-        font-size: 48px;
-        line-height: 142.6%;
+        font-size: 2.65rem;
+
         position: relative;
-        z-index: 2;
     }
 
     @media screen and (max-width: $breakpoint-small) {
         .banner-text {
-            font-size: 18px;
+            font-size: 25px;
         }
     }
 }

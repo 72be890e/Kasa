@@ -4,7 +4,7 @@ import BannerAbout from "../../assets/images/banners/about.png";
 
 function About() {
     return (
-        <section className='page-container home-container'>
+        <section className='page-container about-container'>
             <div className='banner-container'>
                 <Banner img={BannerAbout} />
             </div>

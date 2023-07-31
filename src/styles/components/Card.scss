@@ -28,4 +28,8 @@
     &:link {
         text-decoration: none;
     }
+
+    @media screen and (max-width: $breakpoint-small) {
+        width: 100%;
+    }
 }

@@ -1,21 +1,23 @@
 .not-found-container {
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
-    gap: 40px;
+    padding: 8rem 0;
+    gap: 60px;
     color: $color-primary;
 
     .not-found-content {
         @include flex(column, center, center);
+        padding-bottom: 4rem;
 
         .not-found-title {
             font-weight: 700;
-            font-size: 15rem;
+            font-size: 25vw;
+            margin: 0;
         }
 
         p {
             font-weight: 500;
-            font-size: clamp(20px, 4vw, 36px);
+            font-size: 3vh;
             text-align: center;
         }
     }
@@ -24,7 +26,20 @@
         display: block;
         text-align: center;
         font-weight: 500;
-        font-size: 1em;
-        text-decoration: none;
+        font-size: 2.25vh;
+        text-decoration: underline;
+        color: $color-primary;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        .not-found-content {
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        .return-link {
+            font-size: 1em;
+        }
     }
 }

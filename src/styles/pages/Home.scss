@@ -21,13 +21,9 @@
     }
 
     @media screen and (max-width: $breakpoint-small) {
-        .banner-container {
-            height: 15rem;
-        }
-
         .gallery-container {
             @include flex(column);
-            padding: 7.5% 0 2.5% 0;
+            background: initial;
         }
     }
 }

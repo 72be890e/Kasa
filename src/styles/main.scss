@@ -46,5 +46,6 @@ body {
 @media screen and (max-width: $breakpoint-small) {
     .page-container {
         max-width: 90vw;
+        grid-gap: 0.3rem;
     }
 }

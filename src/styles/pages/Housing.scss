@@ -1,5 +1,9 @@
-.info-container {
-    @include flex(row, space-between);
+.info-content-container {
+    @include flex(row, space-between, center);
+
+    .info-container {
+        @include flex(row, space-between);
+    }
 
     .info-tags {
         margin: 0 0 20px;
@@ -11,11 +15,13 @@
         }
 
         h1 {
-            font-size: calc(1rem + 1.4vw);
+            font-size: 2.5rem;
             margin: 5px 0;
+            font-weight: 400;
         }
 
         h2 {
+            font-size: 1.1rem;
             margin: 10px 0;
         }
 
@@ -33,9 +39,13 @@
     }
 
     @media screen and (max-width: $breakpoint-small) {
-        @include flex();
-        align-content: flex-start;
-        flex-wrap: wrap;
+        display: initial;
+
+        .info-container {
+            @include flex(row, flex-start, center);
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
 
         .info-tags {
             h1 {
@@ -44,7 +54,7 @@
             }
 
             h2 {
-                font-size: 1.55em;
+                font-size: 1em;
                 margin: 10px 0;
             }
 
@@ -52,10 +62,18 @@
                 gap: 1rem;
             }
         }
+
+        .info-stars-host-container {
+            @include flex(row-reverse);
+        }
     }
 }
 
 .housing-collapse-container {
     @include flex(row, center, normal);
     grid-gap: 1em;
+
+    @media screen and (max-width: $breakpoint-small) {
+        flex-direction: column;
+    }
 }

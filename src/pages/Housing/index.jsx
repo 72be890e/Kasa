@@ -21,30 +21,31 @@ function Housing() {
             <section className='page-container housing-container'>
                 <Gallery images={housingData.pictures} />
 
-                <div className='info-container'>
-                    <div className='info-tags'>
-                        <div className='info-content'>
-                            <h1>{housingData.title}</h1>
-                            <h2>{housingData.location}</h2>
-                        </div>
-                        <div className='info-tags-content'>
-                            {housingData.tags.map((tag) => (
-                                <Tag
-                                    key={`${housingData.id}-${tag}`}
-                                    tag={tag}
-                                />
-                            ))}
+                <div className='info-content-container'>
+                    <div className='info-container'>
+                        <div className='info-tags'>
+                            <div className='info-content'>
+                                <h1>{housingData.title}</h1>
+                                <h2>{housingData.location}</h2>
+                            </div>
+                            <div className='info-tags-content'>
+                                {housingData.tags.map((tag) => (
+                                    <Tag
+                                        key={`${housingData.id}-${tag}`}
+                                        tag={tag}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div className='info-stars-host-container'>
+                        <Host
+                            hostName={housingData.host.name}
+                            hostPicture={housingData.host.picture}
+                        />
 
-                <div className='info-stars-host-container'>
-                    <Host
-                        hostName={housingData.host.name}
-                        hostPicture={housingData.host.picture}
-                    />
-
-                    <Rate value={parseInt(housingData.rating)} />
+                        <Rate value={parseInt(housingData.rating)} />
+                    </div>
                 </div>
 
                 <div className='housing-collapse-container'>

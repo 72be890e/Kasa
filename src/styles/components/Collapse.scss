@@ -6,19 +6,19 @@
     .description-container {
         @include flex(row, space-between, center);
         background-color: $color-primary;
-        height: 3rem;
+        height: 2.5rem;
         font-size: 18px;
         font-weight: 100;
         color: $color-secondary;
         padding: 0 15px;
-        border-radius: 10px;
+        border-radius: 7.5px;
     }
 
     .collapse-content-container {
         .collapse-content {
             color: $color-primary;
             padding: 15px;
-            font-size: 18px;
+            font-size: 15px;
             list-style-position: inside;
             list-style-type: none;
         }
